@@ -1,0 +1,13 @@
+apiVersion: configmanagement.gke.io/v1
+kind: ConfigManagement
+metadata:
+  name: config-management
+spec:
+  # clusterName is required and must be unique among all managed clusters
+  clusterName: 'onlineboutique'
+  # Enable multi-repo mode to use additional features
+  enableMultiRepo: true
+  #policyController:
+   # enabled: true
+    # Uncomment to prevent the template library from being installed
+    # templateLibraryInstalled: false
