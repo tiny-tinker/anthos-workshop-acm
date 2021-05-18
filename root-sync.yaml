@@ -1,0 +1,16 @@
+# If you are using a Config Sync version earlier than 1.7,
+# use: apiVersion: configsync.gke.io/v1alpha1
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  name: root-sync
+  namespace: config-management-system
+spec:
+  sourceFormat: hierarchy
+  git:
+    repo: 'https://github.com/tiny-tinker/anthos-workshop-acm'
+    branch: master
+    dir: "config-root/"
+    auth: none
+    #secretRef:
+    #  name: ''
