@@ -1,9 +1,9 @@
-# ns-must-have-geo.yaml
+# ns-must-have-cust.yaml
 
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sRequiredLabels
 metadata:
-  name: ns-must-have-geo
+  name: ns-must-have-cust
 spec:
   match:
     kinds:
