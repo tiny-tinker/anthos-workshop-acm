@@ -8,7 +8,7 @@ spec:
   match:
     kinds:
       - apiGroups: [""]
-        kinds: ["Namespace"]
+        kinds: ["Service"]
   parameters:
     labels:
       - key: "customer"
