@@ -1,14 +1,14 @@
-# ns-must-have-cust.yaml
+# must-have-cust.yaml
 
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sRequiredLabels
 metadata:
-  name: svc-must-have-cust
+  name: must-have-cust
 spec:
   match:
     kinds:
       - apiGroups: [""]
-        kinds: ["Deployments"]
+        kinds: ["Service"]
   parameters:
     labels:
       - key: "customer"
