@@ -10,4 +10,5 @@ spec:
       - apiGroups: ["*"]
         kinds: ["Deployments"]
   parameters:
-    labels: "customer"
+    labels:
+      - key: "customer"
